@@ -1,0 +1,35 @@
+body{
+    background-image: url("nathan-dumlao-553945-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.App{
+    text-align: right;
+    color: white;
+    font-size: 25px;
+    margin-top: 15%;
+    margin-right: 10px;
+}
+
+.App-title {
+    font-size: 40px;
+    padding: 10px;
+}
+
+.Clock-days, .Clock-hours, .Clock-minutes, .Clock-seconds {
+    display: inline;
+    margin: 10px;
+}
+
+.Deadline-input{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.Deadline-submit{
+    margin-right: 10px;
+}
+
+
