@@ -27,8 +27,15 @@ class App extends Component {
             />
           <Form inline>
             <FormControl className="Deadline-input"
+              value={this.state.newDeadline}
+              placeholder="Enter date"  
               onChange={event => this.setState({newDeadline: event.target.value})}
-              placeholder="Enter date" 
+              onKeyPress={event => {                
+                if(event.key === 'Enter'){
+                  this.changeDeadline();
+                  event.preventDefault();  //prevent the pressing of enter triggering a submit (form reload)
+                }
+              }}       
             />
             <Button className="Deadline-submit"
               onClick={() => this.changeDeadline()}>
